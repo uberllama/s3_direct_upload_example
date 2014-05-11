@@ -1,0 +1,16 @@
+<%= s3_uploader_form id: "s3-uploader",
+  callback_url: documents_url,
+  callback_param: "document[direct_upload_url]",
+  expiration: 24.hours.from_now.utc.iso8601,
+  max_file_size: 10.megabytes do %>
+  <%= file_field_tag :file, multiple: true %>
+<% end %>
+
+<div id="uploads_container"></div>
+
+<script id="template-upload" type="text/x-tmpl">
+<div id="upload_{%=o.unique_id%}" class="upload">
+  {%=o.name%}
+  <div class="progress progress-striped active"><div class="bar" style="width: 0%"></div></div>
+</div>
+</script>

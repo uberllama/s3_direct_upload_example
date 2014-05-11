@@ -1,0 +1,13 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: s3_direct_upload_example_development
+  host: localhost
+  pool: 5
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: s3_direct_upload_example_test
+  host: localhost
+  pool: 5

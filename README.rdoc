@@ -1,0 +1,1 @@
+Code example for http://blog.littleblimp.com/post/53942611764/direct-uploads-to-s3-with-rails-paperclip-and

@@ -1,0 +1,5 @@
+<div>
+  <%= document.upload_file_name %><br />
+  <%= number_to_human_size(document.upload_file_size) %><br />
+  <%= link_to "Download", download_document_path(id: document.id, filename: document.upload_file_name) %>
+</div>
